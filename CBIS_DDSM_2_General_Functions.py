@@ -1,8 +1,10 @@
+
 import os
 import cv2
 import numpy as np
 import pandas as pd
 import pydicom
+import tensorflow as tf
 
 from sklearn.utils import resample
 
@@ -13,10 +15,77 @@ from skimage.feature import graycomatrix, graycoprops
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
-from DDSM_3_General_Functions import ShowSort
-from DDSM_3_General_Functions import Removeallfiles
+# Detect fi GPU exist in your PC for CNN
 
-from DDSM_7_1_CNN_Architectures import PreTrainedModels
+def detect_GPU():
+
+  GPU_name = tf.test.gpu_device_name()
+  GPU_available = tf.test.is_gpu_available()
+
+  print(GPU_available)
+
+  if GPU_available == True:
+      print("GPU device is available")
+
+  if "GPU" not in GPU_name:
+      print("GPU device not found")
+  print('Found GPU at: {}'.format(GPU_name))
+
+# Sort Files
+
+def ShowSort(Folder_Path): 
+
+	"""
+	Read all images in a folder and sort them.
+
+    Parameters:
+    argument1 (Folder): Folder used.
+
+    Returns:
+	int:Returning value
+    int:Returning list[str]
+
+   	"""
+
+	NumberImages = len(os.listdir(Folder_Path))
+
+	print("\n")
+	print("********************************")
+	print(f"Images: {NumberImages}")
+	print("********************************")
+	print("\n")
+
+	files = os.listdir(Folder_Path)
+	print(files)
+	print("\n")
+
+	print("********************************")
+	sorted_files =  sorted(files)
+	print(sorted_files)
+	print("\n")
+	print("********************************")
+
+	return sorted_files, NumberImages
+
+# Remove all files in folder
+
+def Removeallfiles(Folder_Path):
+
+	"""
+	Remove all images inside the folder chosen
+
+    Parameters:
+    argument1 (Folder): Folder used.
+
+    Returns:
+	Void
+
+   	"""
+
+	for File in os.listdir(Folder_Path):
+		filename, extension  = os.path.splitext(File)
+		print(f"Removing {filename} ✅")
+		os.remove(os.path.join(Folder_Path, File))
 
 def TransformedLabelDDSM(Dataset_Cancer, Column):
 
@@ -904,7 +973,6 @@ def ConvertDCM(PATH_FILE, NAME, PathN, PathRe, PathReNo):
       print("dirs:%s"% dirs)
       print("files:%s"% files)
       print("-------------------------------")
-
 
   for dirpath, subdirs, files in os.walk(PATH_FILE):
       for x in files:
