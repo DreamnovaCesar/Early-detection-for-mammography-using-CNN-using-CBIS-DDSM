@@ -1,148 +1,136 @@
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
 
-GeneralDataCSV = "D:\DDSM\DataCSV"
-GeneralDataModelsEsp = "D:\DDSM\DataModelsEsp"
-GeneralDataModels = "D:\DDSM\DataModels"
+General_Data_CSV = r"D:\CBIS-DDSM\CBIS-DDSM Final\1_General_DataCSV"
+General_Data_Models = r"D:\CBIS-DDSM\CBIS-DDSM Final\1_General_DataModels"
 
-GeneralMultiDataCSV = "D:\DDSM\MultiDataCSV"
-GeneralMultiDataModelsEsp = "D:\DDSM\MultiDataModelsEsp"
-GeneralMultiDataModels = "D:\DDSM\MultiDataModels"
+Biclass_Data_CSV = r"D:\CBIS-DDSM\CBIS-DDSM Final\2_Biclass_DataCSV"
+Biclass_Data_Models = r"D:\CBIS-DDSM\CBIS-DDSM Final\2_Biclass_DataModels"
+Biclass_Data_Models_Esp = r"D:\CBIS-DDSM\CBIS-DDSM Final\2_Biclass_DataModelsEsp"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ########## 244
+Multiclass_Data_CSV = r"D:\CBIS-DDSM\CBIS-DDSM Final\3_Multiclass_DataCSV"
+Multiclass_Data_Models = r"D:\CBIS-DDSM\CBIS-DDSM Final\3_Multiclass_DataModels"
+Multiclass_Data_Models_Esp = r"D:\CBIS-DDSM\CBIS-DDSM Final\3_Multiclass_DataModelsEsp"
 
-Calcification_Test = "D:\DDSM\Calc Mammography\Calcification Test\CBIS-DDSM"
-Calcification_Test_Patches = "D:\DDSM\Calc Mammography\Calcification Test\CBIS-DDSM Images patch"
-Calcification_Test_Patches_Resize = "D:\DDSM\Calc Mammography\Calcification Test\CBIS-DDSM Images patch resize"
-Calcification_Test_Patches_Resize_Normalization = "D:\DDSM\Calc Mammography\Calcification Test\CBIS-DDSM Images patch resize normalize"
+# ? Normal
 
-Calcification_Training = "D:\DDSM\Calc Mammography\Calcification Training\CBIS-DDSM"
-Calcification_Training_Patches = "D:\DDSM\Calc Mammography\Calcification Training\CBIS-DDSM Images patch"
-Calcification_Training_Patches_Resize = "D:\DDSM\Calc Mammography\Calcification Training\CBIS-DDSM Images patch resize"
-Calcification_Training_Patches_Resize_Normalization = "D:\DDSM\Calc Mammography\Calcification Training\CBIS-DDSM Images patch resize normalize"
+Normal_NT_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\NT_Normal_Images"
+Normal_NO_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\NO_Normal_Images"
+Normal_CLAHE_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CLAHE_Normal_Images"
+Normal_HE_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\HE_Normal_Images"
+Normal_UM_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\UM_Normal_Images"
+Normal_CS_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CS_Normal_Images"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ########## 244
+# ? Class
 
-Mass_Test = "D:\DDSM\Mass Mammography\Mass Test\CBIS-DDSM"
-Mass_Test_Patches = "D:\DDSM\Mass Mammography\Mass Test\CBIS-DDSM Mass Images patches"
-Mass_Test_Patches_Resize = "D:\DDSM\Mass Mammography\Mass Test\CBIS-DDSM Mass Images patches resize"
-Mass_Test_Patches_Resize_Normalization = "D:\DDSM\Mass Mammography\Mass Test\CBIS-DDSM Mass Images patches resize normalize"
+CBIS_DDSM_NT_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_NT_Images_Biclass"
+CBIS_DDSM_NT_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_NT_Images_Multiclass"
+CBIS_DDSM_NO_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_NO_Images_Biclass"
+CBIS_DDSM_NO_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_NO_Images_Multiclass"
+CBIS_DDSM_CLAHE_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_CLAHE_Images_Biclass"
+CBIS_DDSM_CLAHE_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_CLAHE_Images_Multiclass"
+CBIS_DDSM_HE_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_HE_Images_Biclass"
+CBIS_DDSM_HE_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_HE_Images_Multiclass"
+CBIS_DDSM_UM_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_UM_Images_Biclass"
+CBIS_DDSM_UM_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_UM_Images_Multiclass"
+CBIS_DDSM_CS_Images_Biclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_CS_Images_Biclass"
+CBIS_DDSM_CS_Images_Multiclass = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS_DDSM_CS_Images_Multiclass"
 
-Mass_Training = "D:\DDSM\Mass Mammography\Mass Training\CBIS-DDSM"
-Mass_Training_Patches = "D:\DDSM\Mass Mammography\Mass Training\CBIS-DDSM Mass Images patches"
-Mass_Training_Patches_Resize = "D:\DDSM\Mass Mammography\Mass Training\CBIS-DDSM Mass Images patches resize"
-Mass_Training_Patches_Resize_Normalization = "D:\DDSM\Mass Mammography\Mass Training\CBIS-DDSM Mass Images patches resize normalize"
+# ? Calcification
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ########## 244
+Calc_CBIS_DDSM_Test = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Test"
+Calc_Test = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Test\CBIS-DDSM Calc images"
+Calc_Test_Patches = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Test\CBIS-DDSM Calc_NT_images"
+Calc_Test_Patches_Resize = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Test\CBIS-DDSM Calc_RS_images"
+Calc_Test_Patches_Resize_NO = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Test\CBIS-DDSM Calc_NO_images"
 
-# Normal
+Calc_CBIS_DDSM_Training = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Training"
+Calc_Training = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Training\CBIS-DDSM Calc images"
+Calc_Training_Patches = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Training\CBIS-DDSM Calc_NT_images"
+Calc_Training_Patches_Resize = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Training\CBIS-DDSM Calc_RS_images"
+Calc_Training_Patches_Resize_NO = "D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\CBIS-DDSM_Calcification_Training\CBIS-DDSM Calc_NO_images"
 
-WONormalImages = "D:\DDSM\WONormalImages"
-NONormalImages = r"D:\DDSM\NONormalImages"
-CLAHENormalImages = "D:\DDSM\CLAHENormalImages"
-HENormalImages = "D:\DDSM\HENormalImages"
-UMNormalImages = r"D:\DDSM\UMNormalImages"
-CSNormalImages = "D:\DDSM\CSNormalImages"
+Calc_NT_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NT_AbnormalImages"
+Calc_NT_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NT_ALLBenignImages"
+Calc_NT_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NT_BenignImages"
+Calc_NT_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NT_MalignantImages"
+Calc_NT_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NT_WCBenignImages"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Calc_NO_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NO_AbnormalImages"
+Calc_NO_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NO_ALLBenignImages"
+Calc_NO_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NO_BenignImages"
+Calc_NO_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NO_MalignantImages"
+Calc_NO_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_NO_WCBenignImages"
 
-# Calcification
+Calc_CLAHE_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CLAHE_AbnormalImages"
+Calc_CLAHE_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CLAHE_ALLBenignImages"
+Calc_CLAHE_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CLAHE_BenignImages"
+Calc_CLAHE_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CLAHE_MalignantImages"
+Calc_CLAHE_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CLAHE_WCBenignImages"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Calc_HE_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_HE_AbnormalImages"
+Calc_HE_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_HE_ALLBenignImages"
+Calc_HE_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_HE_BenignImages"
+Calc_HE_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_HE_MalignantImages"
+Calc_HE_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_HE_WCBenignImages"
 
-WOALLBenignImages = "D:\DDSM\Calc Mammography\WOALLBenignImages"
-WOBenignImages = "D:\DDSM\Calc Mammography\WOBenignImages"
-WOBenignWCImages = "D:\DDSM\Calc Mammography\WOBenignWCImages"
-WOMalignantImages = "D:\DDSM\Calc Mammography\WOMalignantImages"
-WOAbnormalImages = "D:\DDSM\Calc Mammography\WOAbnormalImages"
-WONormalImages = "D:\MIAS\MIAS VS\CroppedNormalImages"
+Calc_UM_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_UM_AbnormalImages"
+Calc_UM_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_UM_ALLBenignImages"
+Calc_UM_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_UM_BenignImages"
+Calc_UM_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_UM_MalignantImages"
+Calc_UM_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_UM_WCBenignImages"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Calc_CS_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CS_AbnormalImages"
+Calc_CS_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CS_ALLBenignImages"
+Calc_CS_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CS_BenignImages"
+Calc_CS_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CS_MalignantImages"
+Calc_CS_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Calcification\Calc_CS_WCBenignImages"
 
-NOALLBenignImages = r"D:\DDSM\Calc Mammography\NOALLBenignImages"
-NOBenignImages = r"D:\DDSM\Calc Mammography\NOBenignImages"
-NOBenignWCImages = r"D:\DDSM\Calc Mammography\NOBenignWCImages"
-NOMalignantImages = r"D:\DDSM\Calc Mammography\NOMalignantImages"
-NOAbnormalImages = r"D:\DDSM\Calc Mammography\NOAbnormalImages"
+# ? Mass
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Mass_CBIS_DDSM_Test = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Test"
+Mass_Test = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Test\CBIS-DDSM Mass images"
+Mass_Test_Patches = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Test\CBIS-DDSM Mass_NT_images"
+Mass_Test_Patches_Resize = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Test\CBIS-DDSM Mass_RS_images"
+Mass_Test_Patches_Resize_NO = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Test\CBIS-DDSM Mass_NO_images"
 
-CLAHEALLBenignImages = "D:\DDSM\Calc Mammography\CLAHEALLBenignImages"
-CLAHEBenignImages = "D:\DDSM\Calc Mammography\CLAHEBenignImages"
-CLAHEBenignWCImages = "D:\DDSM\Calc Mammography\CLAHEBenignWCImages"
-CLAHEMalignantImages = "D:\DDSM\Calc Mammography\CLAHEMalignantImages"
-CLAHEAbnormalImages = "D:\DDSM\Calc Mammography\CLAHEAbnormalImages"
+Mass_CBIS_DDSM_Training = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Training"
+Mass_Training = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Training\CBIS-DDSM Mass images"
+Mass_Training_Patches = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Training\CBIS-DDSM Mass_NT_images"
+Mass_Training_Patches_Resize = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Training\CBIS-DDSM Mass_RS_images"
+Mass_Training_Patches_Resize_NO = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\CBIS-DDSM_Mass_Training\CBIS-DDSM Mass_NO_images"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Mass_NT_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NT_AbnormalImages"
+Mass_NT_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NT_ALLBenignImages"
+Mass_NT_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NT_BenignImages"
+Mass_NT_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NT_MalignantImages"
+Mass_NT_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NT_WCBenignImages"
 
-HEALLBenignImages = "D:\DDSM\Calc Mammography\HEALLBenignImages"
-HEBenignImages = "D:\DDSM\Calc Mammography\HEBenignImages"
-HEBenignWCImages = "D:\DDSM\Calc Mammography\HEBenignWCImages"
-HEMalignantImages = "D:\DDSM\Calc Mammography\HEMalignantImages"
-HEAbnormalImages = "D:\DDSM\Calc Mammography\HEAbnormalImages"
+Mass_NO_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NO_AbnormalImages"
+Mass_NO_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NO_ALLBenignImages"
+Mass_NO_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NO_BenignImages"
+Mass_NO_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NO_MalignantImages"
+Mass_NO_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_NO_WCBenignImages"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Mass_CLAHE_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CLAHE_AbnormalImages"
+Mass_CLAHE_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CLAHE_ALLBenignImages"
+Mass_CLAHE_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CLAHE_BenignImages"
+Mass_CLAHE_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CLAHE_MalignantImages"
+Mass_CLAHE_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CLAHE_WCBenignImages"
 
-UMALLBenignImages = r"D:\DDSM\Calc Mammography\UMALLBenignImages"
-UMBenignImages = r"D:\DDSM\Calc Mammography\UMBenignImages"
-UMBenignWCImages = r"D:\DDSM\Calc Mammography\UMBenignWCImages"
-UMMalignantImages = r"D:\DDSM\Calc Mammography\UMMalignantImages"
-UMAbnormalImages = r"D:\DDSM\Calc Mammography\UMAbnormalImages"
+Mass_HE_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_HE_AbnormalImages"
+Mass_HE_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_HE_ALLBenignImages"
+Mass_HE_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_HE_BenignImages"
+Mass_HE_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_HE_MalignantImages"
+Mass_HE_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_HE_WCBenignImages"
 
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
+Mass_UM_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_UM_AbnormalImages"
+Mass_UM_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_UM_ALLBenignImages"
+Mass_UM_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_UM_BenignImages"
+Mass_UM_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_UM_MalignantImages"
+Mass_UM_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_UM_WCBenignImages"
 
-CSALLBenignImages = "D:\DDSM\Calc Mammography\CSALLBenignImages"
-CSBenignImages = "D:\DDSM\Calc Mammography\CSBenignImages"
-CSBenignWCImages = "D:\DDSM\Calc Mammography\CSBenignWCImages"
-CSMalignantImages = "D:\DDSM\Calc Mammography\CSMalignantImages"
-CSAbnormalImages = "D:\DDSM\Calc Mammography\CSAbnormalImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ########## 244
-
-# Mass
-
-WOALLBenignMassImages = "D:\DDSM\Mass Mammography\WOALLBenignMassImages"
-WOBenignMassImages = "D:\DDSM\Mass Mammography\WOBenignMassImages"
-WOBenignWCMassImages = "D:\DDSM\Mass Mammography\WOBenignWCMassImages"
-WOMalignantMassImages = "D:\DDSM\Mass Mammography\WOMalignantMassImages"
-WOAbnormalMassImages = "D:\DDSM\Mass Mammography\WOAbnormalMassImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
-
-NOALLBenignMassImages = r"D:\DDSM\Mass Mammography\NOALLBenignMassImages"
-NOBenignMassImages = r"D:\DDSM\Mass Mammography\NOBenignMassImages"
-NOBenignWCMassImages = r"D:\DDSM\Mass Mammography\NOBenignWCMassImages"
-NOMalignantMassImages = r"D:\DDSM\Mass Mammography\NOMalignantMassImages"
-NOAbnormalMassImages = r"D:\DDSM\Mass Mammography\NOAbnormalMassImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
-
-CLAHEALLBenignMassImages = "D:\DDSM\Mass Mammography\CLAHEALLBenignMassImages"
-CLAHEBenignMassImages = "D:\DDSM\Mass Mammography\CLAHEBenignMassImages"
-CLAHEBenignWCMassImages = "D:\DDSM\Mass Mammography\CLAHEBenignWCMassImages"
-CLAHEMalignantMassImages = "D:\DDSM\Mass Mammography\CLAHEMalignantMassImages"
-CLAHEAbnormalMassImages = "D:\DDSM\Mass Mammography\CLAHEAbnormalMassImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
-
-HEALLBenignMassImages = "D:\DDSM\Mass Mammography\HEALLBenignMassImages"
-HEBenignMassImages = "D:\DDSM\Mass Mammography\HEBenignMassImages"
-HEBenignWCMassImages = "D:\DDSM\Mass Mammography\BenignWCMassImages"
-HEMalignantMassImages = "D:\DDSM\Mass Mammography\HEMalignantMassImages"
-HEAbnormalMassImages = "D:\DDSM\Mass Mammography\HEAbnormalMassImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
-
-UMALLBenignMassImages = r"D:\DDSM\Mass Mammography\UMALLBenignMassImages"
-UMBenignMassImages = r"D:\DDSM\Mass Mammography\UMBenignMassImages"
-UMBenignWCMassImages = r"D:\DDSM\Mass Mammography\UMBenignWCMassImages"
-UMMalignantMassImages = r"D:\DDSM\Mass Mammography\UMMalignantMassImages"
-UMAbnormalMassImages = r"D:\DDSM\Mass Mammography\UMAbnormalMassImages"
-
-########## ########## ########## ########## ########## ########## ########## ########## ########## ##########
-
-CSALLBenignMassImages = "D:\DDSM\Mass Mammography\CSALLBenignMassImages"
-CSBenignMassImages = "D:\DDSM\Mass Mammography\CSALLBenignMassImages"
-CSBenignWCMassImages = "D:\DDSM\Mass Mammography\CSALLBenignMassImages"
-CSMalignantMassImages = "D:\DDSM\Mass Mammography\CSALLBenignMassImages"
-CSAbnormalMassImages = "D:\DDSM\Mass Mammography\CSAbnormalMassImages"
+Mass_CS_Abnormal_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CS_AbnormalImages"
+Mass_CS_All_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CS_ALLBenignImages"
+Mass_CS_Benign_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CS_BenignImages"
+Mass_CS_Malignant_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CS_MalignantImages"
+Mass_CS_Benign_WC_Images = r"D:\CBIS-DDSM\CBIS-DDSM Final\CBIS-DDSM_Mass\Mass_CS_WCBenignImages"

@@ -2,6 +2,7 @@
 
 from keras.utils.vis_utils import plot_model
 
+"""
 from DDSM_7_1_CNN_Architectures import ResNet50_PreTrained
 from DDSM_7_1_CNN_Architectures import ResNet50V2_PreTrained
 from DDSM_7_1_CNN_Architectures import ResNet152_PreTrained
@@ -25,6 +26,8 @@ from DDSM_7_1_CNN_Architectures import CustomCNNAlexNet12_Model
 
 from DDSM_8_Preprocessing_5_Resize import XsizeResized
 from DDSM_8_Preprocessing_5_Resize import YsizeResized
+
+"""
 
 ResNet50Model = ResNet50_PreTrained(XsizeResized, YsizeResized)
 ResNet50V2Model = ResNet50V2_PreTrained(XsizeResized, YsizeResized)

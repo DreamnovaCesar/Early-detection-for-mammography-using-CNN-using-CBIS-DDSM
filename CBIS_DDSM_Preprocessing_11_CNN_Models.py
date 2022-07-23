@@ -1,0 +1,44 @@
+import os
+import pandas as pd
+
+os.add_dll_directory(r'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin')
+
+from CBIS_DDSM_1_Folders import Biclass_Data_CSV
+from CBIS_DDSM_1_Folders import Biclass_Data_Model
+from CBIS_DDSM_1_Folders import Biclass_Data_Model_Esp
+
+from CBIS_DDSM_8_CNN_Architectures import configuration_models
+
+def Testing_CNN_Models_Biclass(Model, Technique, All_images, All_labels):
+
+    # * Parameters
+    Labels_biclass = ['Normal', 'Tumor']
+    #Labels_triclass = ['Normal', 'Benign', 'Malignant']
+    X_size = 224
+    Y_size = 224
+    Epochs = 5
+    Valid_split = 0.1
+
+    # * Lists
+    Column_names = ['Name Model', "Model used", "Accuracy Training FE", "Accuracy Training LE", "Accuracy Testing", "Loss Train", "Loss Test", "Training images", "Test images", "Precision", "Recall", "F1_Score", "Time training", "Time testing", "Technique used", "TN", "FP", "FN", "TP", "Epochs", "Auc"]
+    #Dataframe_keys = ['Model function', 'Technique', 'Labels', 'Xsize', 'Ysize', 'Validation split', 'Epochs', 'Images 1', 'Labels 1', 'Images 2', 'Labels 2']
+    
+    Dataframe_save_mias = pd.DataFrame(columns = Column_names)
+    
+    #for Index, model in enumerate(Model):
+        #Model_function, Model_name, Model_name_letters = model(X_size, Y_size, len(Labels_biclass))
+
+    # * Save dataframe in the folder given
+    #Dataframe_save_mias_name = 'Biclass_' + 'Dataframe_' + 'CNN_' + str(Technique) + '_' + str(Model_name_letters) + '.csv'
+    Dataframe_save_mias_name = 'Biclass_' + 'Dataframe_' + 'CNN_' + str(Technique) + '.csv'
+    Dataframe_save_mias_folder = os.path.join(Biclass_Data_CSV, Dataframe_save_mias_name)
+
+    Dataframe_save_mias.to_csv(Dataframe_save_mias_folder)
+    Dataframe_save_mias = pd.read_csv(Dataframe_save_mias_folder)
+
+    #print(Dataframe_save_mias_folder)
+
+    Info_dataframe = configuration_models(All_images, All_labels, Dataframe_save_mias, Dataframe_save_mias_folder, Model, Technique, Labels_biclass, Column_names, X_size, Y_size, Valid_split, Epochs, Biclass_Data_CSV, Biclass_Data_Model, Biclass_Data_Model_Esp)
+
+    return Info_dataframe
+
